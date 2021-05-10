@@ -2,13 +2,13 @@ import React from 'react'
 import { Tag, VerifiedIcon, CommunityIcon, BinanceIcon } from '@pancakeswap-libs/uikit'
 
 const CoreTag = () => (
-  <Tag variant="secondary" outline startIcon={<VerifiedIcon />}>
+  <Tag variant="primary" outline startIcon={<VerifiedIcon />}>
     Core
   </Tag>
 )
 
 const CommunityTag = () => (
-  <Tag variant="textSubtle" outline startIcon={<CommunityIcon />}>
+  <Tag variant="primary" outline startIcon={<CommunityIcon />}>
     Community
   </Tag>
 )

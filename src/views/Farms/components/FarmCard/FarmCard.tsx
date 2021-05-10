@@ -56,7 +56,8 @@ const StyledCardAccent = styled.div`
 
 const FCard = styled.div`
   align-self: baseline;
-  background: ${(props) => props.theme.card.background};
+  // background: ${(props) => props.theme.card.background};
+  background: #121827;
   border-radius: 32px;
   box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05);
   display: flex;
@@ -68,7 +69,8 @@ const FCard = styled.div`
 `
 
 const Divider = styled.div`
-  background-color: ${({ theme }) => theme.colors.borderColor};
+  // background-color: ${({ theme }) => theme.colors.borderColor};
+  background-color: #524B63;
   height: 1px;
   margin: 28px auto;
   width: 100%;
@@ -142,8 +144,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       />
       {!removed && (
         <Flex justifyContent="space-between" alignItems="center">
-          <Text>{TranslateString(736, 'APR')}:</Text>
-          <Text bold style={{ display: 'flex', alignItems: 'center' }}>
+          <Text color="white">{TranslateString(736, 'APR')}:</Text>
+          <Text color="primary" bold style={{ display: 'flex', alignItems: 'center' }}>
             {farm.apy ? (
               <>
                 <ApyButton lpLabel={lpLabel} addLiquidityUrl={addLiquidityUrl} cakePrice={cakePrice} apy={farm.apy} />
@@ -156,8 +158,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         </Flex>
       )}
       <Flex justifyContent="space-between">
-        <Text>{TranslateString(318, 'Earn')}:</Text>
-        <Text bold>{earnLabel}</Text>
+        <Text color="white">{TranslateString(318, 'Earn')}:</Text>
+        <Text color="primary" bold>{earnLabel}</Text>
       </Flex>
       <CardActionsContainer farm={farm} ethereum={ethereum} account={account} addLiquidityUrl={addLiquidityUrl} />
       <Divider />

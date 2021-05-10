@@ -13,7 +13,7 @@ const TwitterCard = () => {
   return (
     <StyledTwitterCard>
       <CardBody>
-        <Heading size="lg" mb="24px">
+        <Heading size="lg" mb="24px" color="white">
           Our latest news
         </Heading>
         <Timeline

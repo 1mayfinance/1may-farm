@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: #1f2b46;
     background-image: url('./images/arch-light.svg');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -24,6 +24,11 @@ const GlobalStyle = createGlobalStyle`
       max-width: 100%;
     }
   }
+
+  nav {
+    background-color: #121827 !important;
+  }
+
 `
 
 export default GlobalStyle
