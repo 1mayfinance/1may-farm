@@ -65,6 +65,7 @@ const FlexFull = styled.div`
 `
 const Label = styled.div`
   font-size: 14px;
+  color: #ff720d;
 `
 const TokenLink = styled.a`
   font-size: 14px;
@@ -108,7 +109,7 @@ const CardFooter: React.FC<Props> = ({
                 {TranslateString(408, 'Total')}
               </Label>
             </FlexFull>
-            <Balance fontSize="14px" isDisabled={isFinished} value={getBalanceNumber(totalStaked)} />
+            <Balance fontSize="14px" isDisabled={isFinished} value={getBalanceNumber(totalStaked)} color="white" />
           </Row>
           {blocksUntilStart > 0 && (
             <Row>

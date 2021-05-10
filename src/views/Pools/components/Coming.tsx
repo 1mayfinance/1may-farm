@@ -7,7 +7,8 @@ import Card from './Card'
 import CardTitle from './CardTitle'
 
 const Balance = styled.div`
-  color: ${({ theme }) => theme.colors.text};
+  // color: ${({ theme }) => theme.colors.text};
+  color: white;
   font-size: 40px;
   font-weight: 600;
 `
@@ -58,17 +59,17 @@ const Coming: React.FC = () => {
           {TranslateString(418, 'Apply Now')}
         </Button>
         <DetailPlaceholder>
-          <div style={{ flex: 1 }}>{TranslateString(736, 'APR')}:</div>
-          <Value>??</Value>
+          <div style={{ flex: 1, color: "#ff720d" }}>{TranslateString(736, 'APR')}:</div>
+          <Value style={{ color: "white" }}>??</Value>
         </DetailPlaceholder>
         <DetailPlaceholder>
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1, color: "#ff720d" }}>
             <span role="img" aria-label="syrup">
               🥛{' '}
             </span>
             {TranslateString(384, 'Your Stake')}:
           </div>
-          <Value>??? MILK</Value>
+          <Value style={{ color: "white" }}>??? MILK</Value>
         </DetailPlaceholder>
       </div>
       <Footer>

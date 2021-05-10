@@ -88,10 +88,10 @@ const Farm: React.FC = () => {
           }}
         />
         <div>
-          <Heading as="h1" size="xxl" mb="16px">
+          <Heading as="h1" size="xxl" mb="16px" color="white">
             Pools
           </Heading>
-          <Text>
+          <Text color="primary">
             Stake MILK to earn new tokens. You can unstake at any time. Rewards are calculated per block.
           </Text>
         </div>

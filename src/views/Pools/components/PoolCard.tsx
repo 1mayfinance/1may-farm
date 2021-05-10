@@ -133,7 +133,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
         </div>
         {!isOldSyrup ? (
           <BalanceAndCompound>
-            <Balance value={getBalanceNumber(earnings, tokenDecimals)} isDisabled={isFinished} />
+            <Balance value={getBalanceNumber(earnings, tokenDecimals)} color="white" isDisabled={isFinished} />
             {sousId === 0 && account && harvest && (
               <HarvestButton
                 disabled={!earnings.toNumber() || pendingTx}
@@ -181,21 +181,21 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
             ))}
         </StyledCardActions>
         <StyledDetails>
-          <div style={{ flex: 1 }}>{TranslateString(736, 'APR')}:</div>
+          <div style={{ flex: 1, color: "#ff720d" }}>{TranslateString(736, 'APR')}:</div>
           {isFinished || isOldSyrup || !apy || apy?.isNaN() || !apy?.isFinite() ? (
             '-'
           ) : (
-            <Balance fontSize="14px" isDisabled={isFinished} value={apy?.toNumber()} decimals={2} unit="%" />
+            <Balance fontSize="14px" isDisabled={isFinished} value={apy?.toNumber()} color="white" decimals={2} unit="%" />
           )}
         </StyledDetails>
         <StyledDetails>
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1, color: "#ff720d" }}>
             <span role="img" aria-label={stakingTokenName}>
               🥛{' '}
             </span>
             {TranslateString(384, 'Your Stake')}:
           </div>
-          <Balance fontSize="14px" isDisabled={isFinished} value={getBalanceNumber(stakedBalance)} />
+          <Balance fontSize="14px" isDisabled={isFinished} value={getBalanceNumber(stakedBalance)} color="white" />
         </StyledDetails>
       </div>
       <CardFooter
