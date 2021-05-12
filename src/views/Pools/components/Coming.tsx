@@ -31,6 +31,7 @@ const Footer = styled.div`
   border-top: 1px solid ${({ theme }) => (theme.isDark ? '#524B63' : '#E9EAEB')};
   padding: 24px;
 `
+
 const Coming: React.FC = () => {
   const TranslateString = useI18n()
 
@@ -47,7 +48,7 @@ const Coming: React.FC = () => {
         <Balance>???</Balance>
         <Label>{TranslateString(416, 'Create a pool for your token')}</Label>
         <Button
-          variant="secondary"
+          className="btn-outline-primary"
           as="a"
           /* TODO: This link needs to be changed */
           href="#"

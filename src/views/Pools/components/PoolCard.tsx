@@ -147,7 +147,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
         )}
         <Label isFinished={isFinished && sousId !== 0} text={TranslateString(330, `${tokenName} earned`)} />
         <StyledCardActions>
-          {!account && <UnlockButton />}
+          {!account && <UnlockButton variant="primary" />}
           {account &&
             (needsApproval && !isOldSyrup ? (
               <div style={{ flex: 1 }}>

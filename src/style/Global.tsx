@@ -24,6 +24,12 @@ const GlobalStyle = createGlobalStyle`
       max-width: 100%;
     }
   }
+
+  .btn-outline-primary {
+    border: 3px solid ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
+    background-color : white;
+  }
 `
 
 export default GlobalStyle
