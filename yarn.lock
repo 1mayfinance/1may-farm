@@ -1863,9 +1863,9 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@pancakeswap-libs/uikit@https://github.com/1mayfinance/1may-uikit":
+"@pancakeswap-libs/uikit@https://github.com/Sadiqeen/1may-uikit":
   version "0.10.6"
-  resolved "https://github.com/1mayfinance/1may-uikit#65bda1741edf6f04dcff06c803676ef57b1b0ca6"
+  resolved "https://github.com/Sadiqeen/1may-uikit#3da4afe1519ebdb3669d11b1ad118b3ec1489e77"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
