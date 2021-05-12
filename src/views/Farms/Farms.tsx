@@ -107,10 +107,10 @@ const Farms: React.FC = () => {
           }}
         />
         <div>
-          <Heading as="h1" size="xxl" mb="16px" color="white">
+          <Heading as="h1" size="xxl" mb="16px">
             Farms
           </Heading>
-          <Text color="primary">
+          <Text>
             Stake LP tokens to earn MILK.
           </Text>
         </div>

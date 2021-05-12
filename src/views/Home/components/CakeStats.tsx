@@ -23,10 +23,6 @@ const Row = styled.div`
   margin-bottom: 8px;
 `
 
-const CardTextExtended = styled(Text)`
-  color: #ffffff;
-`
-
 const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
@@ -35,20 +31,20 @@ const CakeStats = () => {
   return (
     <StyledCakeStats>
       <CardBodyExtended>
-        <Heading size="xl" mb="24px" color="white">
+        <Heading size="xl" mb="24px">
           MILK Stats
         </Heading>
         <Row>
-          <CardTextExtended fontSize="14px">Total MILK Supply</CardTextExtended>
-          {cakeSupply && <CardValue fontSize="14px" color="primary" value={cakeSupply} />}
+          <Text fontSize="14px">Total MILK Supply</Text>
+          {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} />}
         </Row>
         <Row>
-          <CardTextExtended fontSize="14px">Total MILK Burned</CardTextExtended>
-          <CardValue fontSize="14px" color="primary" value={getBalanceNumber(burnedBalance)} />
+          <Text fontSize="14px">Total MILK Burned</Text>
+          <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} />
         </Row>
         <Row>
-          <CardTextExtended fontSize="14px">New MILK/block</CardTextExtended>
-          <CardValue fontSize="14px" color="primary" decimals={0} value={1} />
+          <Text fontSize="14px">New MILK/block</Text>
+          <CardValue fontSize="14px" decimals={0} value={1} />
         </Row>
       </CardBodyExtended>
     </StyledCakeStats>

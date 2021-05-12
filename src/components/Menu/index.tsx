@@ -4,12 +4,7 @@ import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { allLanguages } from 'config/localisation/languageCodes'
 import { LanguageContext } from 'contexts/Localisation/languageContext'
 import { usePriceCakeBusd } from 'state/hooks'
-import styled from 'styled-components'
 import config from './config'
-
-const UikitMenuExtended = styled(UikitMenu)`
-  background-color: red !impportant;
-`
 
 const Menu = (props) => {
   const { account, connect, reset } = useWallet()
@@ -17,7 +12,7 @@ const Menu = (props) => {
   const cakePriceUsd = usePriceCakeBusd()
 
   return (
-    <UikitMenuExtended
+    <UikitMenu
       account={account}
       login={connect}
       logout={reset}

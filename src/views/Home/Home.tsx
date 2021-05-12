@@ -37,7 +37,6 @@ const Cards = styled(BaseLayout)`
   & > div {
     grid-column: span 6;
     width: 100%;
-    background-color: #121827;
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
@@ -65,11 +64,11 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
-        <FatHeading as="h1" size="xl" mb="24px" color="white">
+        <FatHeading as="h1" size="xl" mb="24px" color="secondary">
           {/* TranslateString(576, 'PancakeSwap') */}
           MilkSwap
         </FatHeading>
-        <FatText color="primary">
+        <FatText>
           {/* TranslateString(578, 'The #1 AMM and yield farm on Binance Smart Chain.') */}
           The milkiest AMM and yield farm on Binance Smart Chain.
         </FatText>

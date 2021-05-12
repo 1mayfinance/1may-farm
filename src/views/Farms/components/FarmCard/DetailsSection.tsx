@@ -18,8 +18,7 @@ const Wrapper = styled.div`
 const StyledLinkExternal = styled(LinkExternal)`
   text-decoration: none;
   font-weight: normal;
-  // color: ${({ theme }) => theme.colors.text};
-  color: white;
+  color: ${({ theme }) => theme.colors.text};
   display: flex;
   align-items: center;
 
@@ -43,13 +42,13 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
   return (
     <Wrapper>
       <Flex justifyContent="space-between">
-        <Text color="white">{TranslateString(316, 'Stake')}:</Text>
+        <Text>{TranslateString(316, 'Stake')}:</Text>
         <StyledLinkExternal href={addLiquidityUrl}>{lpLabel}</StyledLinkExternal>
       </Flex>
       {!removed && (
         <Flex justifyContent="space-between">
-          <Text color="white">{TranslateString(23, 'Total Liquidity')}:</Text>
-          <Text color="white">{totalValueFormated}</Text>
+          <Text>{TranslateString(23, 'Total Liquidity')}:</Text>
+          <Text>{totalValueFormated}</Text>
         </Flex>
       )}
       <Flex justifyContent="flex-start">

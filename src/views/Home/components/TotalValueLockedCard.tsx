@@ -22,13 +22,13 @@ const TotalValueLockedCard = () => {
   return (
     <StyledTotalValueLockedCard>
       <CardBody>
-        <Heading size="lg" mb="24px" color="white">
+        <Heading size="lg" mb="24px">
           {TranslateString(762, 'Total Value Locked (TVL)')}
         </Heading>
         {tvl ? (
           <>
-            <Heading size="xl"  color="primary">${tvl.toNumber().toLocaleString('en-US', { maximumFractionDigits: 0 })}</Heading>
-            <Text color="white">{TranslateString(764, 'Across all Farms and Pools')}</Text>
+            <Heading size="xl">${tvl.toNumber().toLocaleString('en-US', { maximumFractionDigits: 0 })}</Heading>
+            <Text color="textSubtle">{TranslateString(764, 'Across all Farms and Pools')}</Text>
           </>
         ) : (
           <>
