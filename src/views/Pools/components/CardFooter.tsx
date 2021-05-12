@@ -68,7 +68,7 @@ const Label = styled.div`
 const TokenLink = styled.a`
   font-size: 14px;
   text-decoration: none;
-  color: #12aab5;
+  color: ${(props) => props.theme.colors.primary};
 `
 
 const CardFooter: React.FC<Props> = ({
